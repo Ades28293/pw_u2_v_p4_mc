@@ -5,7 +5,7 @@
     <div class="bg-dark"></div>
 
     <div class="contenedor">
-        <input v-model="pregunta" type="text" placeholder="Hazme una Preguntame">
+        <input v-model="pregunta" type="text" placeholder="Hazme una Preguntame"     >
         <p>Recuerda terminar con un ? la pregunta</p>
 
         <div>
@@ -25,6 +25,7 @@ export default {
             //creo las variables para igualarles en el metodo consumir api y poderlas utilizar
             respuesta: '',
             rutaImagen: null,
+            mensaje:''
 
         };
 
@@ -34,7 +35,10 @@ export default {
             console.log(oldValue);
             if (value.includes("?")) { //condicion que controla lo que ingresa->si ingresa el signo de incognita para consumir el api
                 console.log("Consumir API");
+                this.mensajeEspera()
                 this.consumirAPI()
+                this.vaciarLabel()
+                
             }
         },
 
@@ -52,9 +56,15 @@ export default {
             console.log(image)
             this.respuesta = answer
             this.rutaImagen = image
+          
 
 
-
+        },
+        vaciarLabel(){
+            this.pregunta=''
+        },
+        mensajeEspera(){
+          this.respuesta= this.mensaje='Espere por favor'
         }
 
     },

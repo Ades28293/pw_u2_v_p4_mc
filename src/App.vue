@@ -1,17 +1,21 @@
 <template>
 <!--<Calculadora></Calculadora> 
 <Contador titulo="Estudiante" v-bind:inicio="4+2"></Contador>
-<Contador titulo="Profesor" :inicio="101"> </Contador> <CaracolaMagica></CaracolaMagica>--> 
+<Contador titulo="Profesor" :inicio="101"> </Contador> <Juego></Juego>
+<CaracolaMagica></CaracolaMagica>--> 
 
+<PokemonPageVue></PokemonPageVue>
 
-<Juego></Juego>
 </template>
 
 <script>
+
 //import Contador from "./components/Contador.vue"
 //import Calculadora from "./components/Calculadora.vue"
 //import CaracolaMagica from "./components/CaracolaMagica.vue"
-import Juego from './components/Juego.vue'
+//import Juego from './components/Juego.vue'
+import PokemonPageVue from './components/modules/pages/PokemonPage.vue'
+
 
 
 export default {
@@ -19,8 +23,10 @@ export default {
   components: {
     //Calculadora
    // Contador
-   //CaracolaMagica,
-    Juego
+   //Juego
+ //CaracolaMagica,
+ PokemonPageVue
+    
    
   }
 }
