@@ -14,7 +14,7 @@
 //import Calculadora from "./components/Calculadora.vue"
 //import CaracolaMagica from "./components/CaracolaMagica.vue"
 //import Juego from './components/Juego.vue'
-import PokemonPageVue from './components/modules/pages/PokemonPage.vue'
+import PokemonPageVue from './modules/pages/PokemonPage.vue'
 
 
 
