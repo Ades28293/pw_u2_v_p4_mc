@@ -4,7 +4,7 @@
 <Contador titulo="Profesor" :inicio="101"> </Contador> <Juego></Juego>
 <CaracolaMagica></CaracolaMagica>--> 
 
-<PokemonPageVue></PokemonPageVue>
+<PokemonPageVue/>
 
 </template>
 
