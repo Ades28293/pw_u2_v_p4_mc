@@ -3,8 +3,7 @@
 
   <PokemonImg :pokemonId="145" :muestraPokemon="false"/>
   
-
-  <PokemonOps />
+  <PokemonOps :opciones="arreglo"/>
 </template>
 
 
@@ -16,11 +15,20 @@ import PokemonImg from "../components/PokemonImgs.vue";
 
 import PokemonOps from "../components/PokemonOps.vue";
 
+//importamos la funcionalidad externa de la lógica
+import obtenerFachadaPokemons from "../helpers/clientePokemonAPI";
 
+
+//console.log(obtenerFachadaPokemons())
 
 
 export default {
 
+  data() {
+      return {
+        arreglo: [],
+      };
+    },
   components: {
 
     PokemonImg,
@@ -28,6 +36,18 @@ export default {
     PokemonOps,
 
   },
+  methods:{
+  async cargaJuegoInicial(){
+   const arregloPokemon= await obtenerFachadaPokemons()
+    console.log(arregloPokemon)
+    this.arreglo=arregloPokemon
+
+    }
+  },
+  mounted(){
+    console.log('se monto el componente')
+    this.cargaJuegoInicial()
+  }
 
 };
 

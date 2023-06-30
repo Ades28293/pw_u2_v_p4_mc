@@ -1,6 +1,7 @@
 <template>
     <div class="contenedor_imagen">
 
+
         <img class="oculta-pokemon" :src="imagenFuente" alt="no se puede mostrar imagen">
 
         <img v-if="muestraPokemon" :src="imagenFuente" alt="no se puede mostrar imagen">
