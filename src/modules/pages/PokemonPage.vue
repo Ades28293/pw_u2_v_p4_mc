@@ -10,7 +10,7 @@
       <br />
       <label id="intend" for="">Intentos:{{ intento }}</label>
       <PokemonImg :pokemonId="pokemonCorrecto.id" :muestraPokemon="showPokemon" />
-      <PokemonOps :opciones="arreglo" @seleccionado="revisarSeleccion($event)" />
+      <PokemonOps v-if="!(puntaje>0 || intento>3)" :opciones="arreglo" @seleccionado="revisarSeleccion($event)" />
     </div>
     
 
