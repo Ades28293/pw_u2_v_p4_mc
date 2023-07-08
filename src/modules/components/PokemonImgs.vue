@@ -56,7 +56,7 @@ export default {
     
     
     
-<style scope>
+<style scoped>
 .oculta-pokemon {
     /* Para hacerle opaca a la imagen */
     filter: brightness(0);

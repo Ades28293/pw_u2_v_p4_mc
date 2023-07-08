@@ -10,9 +10,9 @@
       Sumérgete en una nueva y fascinante región llamada Astral, un lugar lleno de misterio y maravillas.
     </p>
 
-    
+    <img id="principal" src="https://i0.wp.com/www.coliseugeek.com.br/wp-content/uploads/2023/01/6776c-clickwallpapers-pokemon-4k-img2-scaled-1.jpg?resize=1024%2C576&ssl=1" alt="No puede cargar la imagen">
   </div>
-  <img id="principal" src="https://i0.wp.com/www.coliseugeek.com.br/wp-content/uploads/2023/01/6776c-clickwallpapers-pokemon-4k-img2-scaled-1.jpg?resize=1024%2C576&ssl=1" alt="No puede cargar la imagen">
+
 
  
 </template>
@@ -21,7 +21,7 @@
 export default {};
 </script>
 
-<style scope>
+<style scoped>
 
 
 .background {
